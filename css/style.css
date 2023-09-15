@@ -30,8 +30,8 @@ nav:hover{
     gap: 5vw;
 }
 
-.link::before{
-    
+.active::before{
+    content: '';
     width: 10px;
     height: 1px;
     background-color: aliceblue;
@@ -44,7 +44,7 @@ nav:hover{
 
 .link > a{
     text-decoration: none;
-    color: #2F3E47;
+    color: #6a8fa7;
     font-family: platinum_sign;
     font-size: 25px;
     transition: 0.2s;
