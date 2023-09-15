@@ -1,3 +1,49 @@
+@font-face {
+    font-family: platinum_sign;
+    src: url(../assets/pixel_2/Pixel-Regular.ttf);
+}
+
 body{
     background-color: #262335;
+}
+
+nav{
+    position: fixed;
+    width: 100vw;
+    height: 70px;
+    top: 0;
+    left: 0;
+    background-color: #1e1450;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+    transition: height 0.5s;
+}
+
+nav:hover{
+    height: 100px;
+    transition: height 0.5s;
+}
+
+.links{
+    display: flex;
+    justify-content: center;
+    gap: 5vw;
+}
+
+.link::before{
+    
+    width: 10px;
+    height: 1px;
+    background-color: aliceblue;
+}
+
+.link{
+    list-style: none;
+}
+
+.link > a{
+    text-decoration: none;
+    color: #2727ce;
+    font-family: platinum_sign;
+    font-size: 25px;
 }
