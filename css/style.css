@@ -13,7 +13,7 @@ nav{
     height: 70px;
     top: 0;
     left: 0;
-    background-color: #1e1450;
+    background-color: #343541
     border-bottom-left-radius: 100%;
     border-bottom-right-radius: 100%;
     transition: height 0.5s;
@@ -39,11 +39,18 @@ nav:hover{
 
 .link{
     list-style: none;
+    position: static;
 }
 
 .link > a{
     text-decoration: none;
-    color: #2727ce;
+    color: #2F3E47;
     font-family: platinum_sign;
     font-size: 25px;
+    transition: 0.2s;
+}
+.link > a:hover {
+    color: #00A99B;
+    font-size: 30px;
+    transition: 0.3s;
 }
