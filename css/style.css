@@ -6,7 +6,7 @@
 * {
     box-sizing: border-box;
     scroll-behavior : smooth;
-    cursor: url("assets/logo.png"), auto;
+    cursor: url("../assets/img/hiclipart.com.png"), auto;
 }
 
 body{
@@ -23,7 +23,7 @@ body{
     object-fit: cover;
     pointer-events: none}
 
-nav{
+nav {
     z-index: 10;
     position: fixed;
     width: 100vw;
@@ -35,23 +35,19 @@ nav{
     transition: 0.8s;
 }
 
-.nav a {
+nav a {
     position: relative;
     font-size: 28px;
     color: #fff;
-    font-weight: 500;
+    font-weight: 800;
     text-decoration: none;
     margin-left: 40px;
 }
 
-
-
-
-
 nav:hover{
     height: 100px;
     transition: 0.5s;
-    background-color: rgba(38, 35, 53,0.9);
+    /*background-color: rgba(38, 35, 53,0.9);*/
 }
 
 .links{
@@ -82,21 +78,22 @@ nav:hover{
 .link > a:hover {
     color: #00A99B;
     font-size: 30px;
+    font-weight: 900;
     transition: 0.3s;
 }
 
-.links > a::before {
+nav a::before {
     content: '';
     position: absolute;
     top: 100%;
     left: 0;
     width: 0;
-    height: 10px;
-    background: #fff;
-    transition: 0.3s;
+    height: 3px;
+    background: #daff0b;
+    transition: 0.8s;
 }
 
 .link > a:hover::before {
     width: 100%;
-    transition: .4s;
+    transition: 0.8s;
 }
