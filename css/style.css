@@ -1,26 +1,57 @@
 @font-face {
     font-family: platinum_sign;
-    src: url(../assets/pixel_2/Pixel-Regular.ttf);
+    src: url(../assets/fonts/pixel_2/Pixel-Regular.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    scroll-behavior : smooth;
+    cursor: url("assets/logo.png"), auto;
 }
 
 body{
     background-color: #262335;
 }
 
+.home img { 
+    position : absolute;
+    z-index: -1;
+    top : 0;
+    Left : 0; 
+    width : 100%;
+    height : 100%; 
+    object-fit: cover;
+    pointer-events: none}
+
 nav{
+    z-index: 10;
     position: fixed;
     width: 100vw;
     height: 70px;
     top: 0;
     left: 0;
-    border-bottom-left-radius: 100%;
-    border-bottom-right-radius: 100%;
-    transition: height 0.5s;
+    /*border-bottom-left-radius: 100%;*/
+    /*border-bottom-right-radius: 100%;*/
+    transition: 0.8s;
 }
+
+.nav a {
+    position: relative;
+    font-size: 28px;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+
+
+
 
 nav:hover{
     height: 100px;
-    transition: height 0.5s;
+    transition: 0.5s;
+    background-color: rgba(38, 35, 53,0.9);
 }
 
 .links{
@@ -52,4 +83,20 @@ nav:hover{
     color: #00A99B;
     font-size: 30px;
     transition: 0.3s;
+}
+
+.links > a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 10px;
+    background: #fff;
+    transition: 0.3s;
+}
+
+.link > a:hover::before {
+    width: 100%;
+    transition: .4s;
 }
