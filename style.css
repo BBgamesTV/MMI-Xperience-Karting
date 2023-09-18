@@ -56,7 +56,9 @@ header .logo::after {
 }
 
 header .logo { 
-    color : #00A99B;
+    background: -webkit-linear-gradient(#718529, #00A99B);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-family: race;
     font-weight : 700;
     text-decoration : none;
