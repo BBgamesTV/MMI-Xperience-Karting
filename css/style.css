@@ -1,0 +1,56 @@
+@font-face {
+    font-family: platinum_sign;
+    src: url(../assets/pixel_2/Pixel-Regular.ttf);
+}
+
+body{
+    background-color: #262335;
+}
+
+nav{
+    position: fixed;
+    width: 100vw;
+    height: 70px;
+    top: 0;
+    left: 0;
+    background-color: #262335;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+    transition: height 0.5s;
+}
+
+nav:hover{
+    height: 100px;
+    transition: height 0.5s;
+}
+
+.links{
+    display: flex;
+    justify-content: center;
+    gap: 5vw;
+}
+
+.active::before{
+    content: '';
+    width: 10px;
+    height: 1px;
+    background-color: aliceblue;
+}
+
+.link{
+    list-style: none;
+    position: static;
+}
+
+.link > a{
+    text-decoration: none;
+    color: #6a8fa7;
+    font-family: platinum_sign;
+    font-size: 25px;
+    transition: 0.2s;
+}
+.link > a:hover {
+    color: #00A99B;
+    font-size: 30px;
+    transition: 0.3s;
+}
