@@ -107,14 +107,9 @@
 
   window.addEventListener('scroll', function () {
     let value = window.scrollY;
-    console.dir(value)
     text.style.marginLeft = value * 1.7 + 'px';
     text2.style.marginTop = value * 1.3 + 'px';
     button.style.marginLeft = value * 1.9 + 'px';
-
-    blue.style.top = value * 0.99 + 'px';
-    rouge.style.top = value * 0.70 + 'px';
-    rose.style.top = value * 0.45 + 'px';
   })
 </script>
 
