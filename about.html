@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Petit Prince Website</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="icon" sizes="16x16" type="image/png" href="assets/logo.png">
+    </head>
+
+    <body>
+        <header>
+            <a href="#" class="logo">BUT MMI</a>
+            <ul>
+                <li class="link"><a class="active" href="#menu">ACCUEIL</a></li>
+                <li class="link"><a href="#about">PRESENTATION</a></li>
+                <li class="link"><a href="#billeterie">BILLETERIE</a></li>
+                <li class="link"><a href="#faq">F.A.Q</a></li>
+                <li class="link"><a href="#contact">CONTACT</a></li>
+            </ul>
+        </header>
+        
+        <section id="menu">
+            <img src="assets/61f21f1f143fae08fce9d3695cfb071a.webp" id="bg">
+
+            <h2 id="title1">MMI Xperience</h2>
+            <h3 id="text2">24h de karting entre étudiants</h3>
+            <a href="#billeterie" id="btn">Viens y participer</a>  
+            
+            
+        </section>
+
+        <section id="about">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-6">
+                  <h2>C'est quoi ?</h2>
+                  <p>
+                    La AirThéLAN, c'est une LAN Party faite par des passionnés, pour des passionnés.<br>
+                    Nous avons pu réunir plus de 45 joueurs lors de sa deuxième édition les 8 et 9 février 2020.<br>
+                  <p>
+                    C'est avant tout un projet associatif, organisé par l'Association Loire Esports.
+                    <br>L'association regroupe passionnés, joueurs et étudiants du milieu des réseaux & télécommunications!
+                  </p>
+                  <p>
+                  Tu prend du fun, de la bonne humeur, du jeu et de la compet, et ça donne AirThéLAN (En gros)!<br>
+                  Reste informé sur l'avancement du projet en nous rejoignant sur le <a href="#discord">Discord</a>!
+                  </p>
+                </div>
+                
+                <div class="col-lg-3">
+                  <h3>Quand déjà?</h3>
+                  <p>En juin 2024</p>
+                </div>
+                  
+                  <div class="col-lg-3">
+                  <h3>Où ça ?</h3>
+                  <p>Circuit de Mer</p>
+                  <iframe src="https://maps.google.com/maps?q=Circuit%20Mer&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+          </section>
+
+        <section id="billeterie">
+            <h2>Achetes ton billet</h2>
+        </section>
+
+        <section id="faq">
+            <h2>F.A.Q</h2>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+        </section>
+
+
+
+        <footer>
+
+        </footer>
+
+    </body>
+
+
+
+
+
+    <script>
+    let text = document.getElementById('title1')
+    let button = document.getElementById('btn')
+    let text2 = document.getElementById('text2')
+
+    let blue = document.getElementById('1')
+    let rouge = document.getElementById('2')
+    let rose = document.getElementById('3')
+    let violet = document.getElementById('4')
+
+
+    window.addEventListener('scroll',function(){
+        let value = window.scrollY;
+        console.dir(value)
+        text.style.marginLeft= value * 1.7 + 'px';
+        text2.style.marginTop= value * 1.3 + 'px';
+        button.style.marginLeft = value * 1.9 + 'px';
+                
+        blue.style.top = value * 0.99 + 'px';
+        rouge.style.top = value * 0.70 + 'px';
+        rose.style.top = value * 0.45 + 'px';
+    })
+    </script>
+</html>
+    
