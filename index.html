@@ -28,7 +28,8 @@
   </header>
 
   <section id="menu">
-    <img src="assets/img/61f21f1f143fae08fce9d3695cfb071a.webp" id="bg">
+    <!-- <img src="assets/img/61f21f1f143fae08fce9d3695cfb071a.webp" id="bg"> -->
+    <video src="./assets/img/stock-footage-three-high-speed-racing-cars-driving-on-winding-night-race-track-to-the-finish-line-racing-go.mp4" autoplay muted loop></video>
 
     <h2 id="title1">MMI Xperience</h2>
     <h3 id="text2">24h de karting entre étudiants</h3>
@@ -106,9 +107,13 @@
 
 
   window.addEventListener('scroll', function () {
+    const heroOpas = this.scrollY / 1000;
+    console.log(heroOpas)
     let value = window.scrollY;
+    let opacityValue = text.style.opacity
     text.style.marginLeft = value * 1.7 + 'px';
     text2.style.marginTop = value * 1.3 + 'px';
+    text2.style.opacity = `${1 - heroOpas}`;
     button.style.marginLeft = value * 1.9 + 'px';
   })
 </script>
